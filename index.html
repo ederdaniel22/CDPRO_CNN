@@ -1,43 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detecção de Pneumonia</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 50px;
-    }
-    #image-container img {
-      max-width: 300px;
-      max-height: 300px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      display: none;
-    }
-    #prediction-result {
-      margin-top: 20px;
-      font-size: 1.2em;
-      font-weight: bold;
-    }
-    input[type="file"] {
-      margin-bottom: 20px;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detecção de Pneumonia</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
 </head>
 <body>
-  <h1>Detecção de Pneumonia (TensorFlow.js)</h1>
-  <input type="file" id="fileInput" accept="image/*">
-  <div id="image-container">
-    <img id="selectedImage" src="#" alt="Imagem selecionada">
-  </div>
-  <button id="predictButton" disabled>Detectar Pneumonia</button>
-  <p id="prediction-result"></p>
-  <script src="script.js"></script>
+    <h1>Detecção de Pneumonia (TensorFlow.js)</h1>
+    <input type="file" id="fileInput" accept="image/*">
+    <div id="image-container">
+        <img id="selectedImage" src="#" alt="Imagem selecionada" style="display:none; max-width:300px;">
+    </div>
+    <button id="predictButton" disabled>Detectar Pneumonia</button>
+    <p id="prediction-result"></p>
+    <script src="script.js"></script>
 </body>
 </html>
