@@ -20,6 +20,11 @@ python -m http.server 8000
 
 5. Acesse `http://localhost:8000` no navegador.
 
+## Fluxo TensorFlow.js
+
+1. A pasta `pneumonia_detection_tfjs_model/` precisa ficar na raiz do projeto, ao lado de `index.html` e `script.js`.
+2. Se voce regenerar os artefatos web no notebook, mantenha os arquivos produzidos no mesmo nivel do README.
+
 ## Arquivos principais
 
 - [CDPRO_CNN.ipynb](CDPRO_CNN.ipynb): notebook principal do projeto.
@@ -31,4 +36,3 @@ python -m http.server 8000
 
 - O fluxo web foi separado do notebook para funcionar fora do Colab.
 - O modelo TensorFlow.js deve ficar na pasta `pneumonia_detection_tfjs_model/` na raiz do projeto.
-- Se voce executar a etapa de conversao no notebook, mantenha os arquivos gerados ao lado de `index.html` e `script.js`.
